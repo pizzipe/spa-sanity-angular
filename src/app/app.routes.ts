@@ -3,7 +3,8 @@ import { MoviesComponent } from './components/movies/movies.component';
 import { ActorsComponent } from './components/actors/actors.component';
 
 export const routes: Routes = [
-{ path: '', redirectTo: '/movies', pathMatch: 'full'},
-{ path: 'movies', component: MoviesComponent},
-{ path: 'actors', component: ActorsComponent}
+  { path: 'movies', component: MoviesComponent},
+  { path: 'actors', component: ActorsComponent},
+  { path: '', redirectTo: '/movies', pathMatch: 'full'},
+  { path: '**', redirectTo: '/movies' } // Wildcard route for a 404 page
 ];
