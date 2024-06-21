@@ -14,6 +14,8 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "docs",
+            "baseHref": "/spa-sanity-angular/",
+            "deployUrl": "/spa-sanity-angular/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
